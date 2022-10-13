@@ -66,7 +66,6 @@ function App() {
       try {
         setLoading(true);
         const res = await fetch("https://table-welbex.herokuapp.com/delivery");
-
         const jsonData = await res.json();
         setClients(jsonData);
         setLoading(false);
